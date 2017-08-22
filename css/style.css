@@ -1,0 +1,430 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+  font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2 {
+	margin-top: 0;
+	color: #3acec2;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+.homepage {
+	min-height: 100vh;
+}
+
+.homepage-wrapper,
+.header-wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+	margin: 0 20px;
+}
+
+.about-wrapper {
+  width: 90%;
+	margin: 20px;
+}
+
+.span-wrapper {
+  width: 90%;
+	margin: 10px auto;
+	margin-bottom: 40px;
+}
+
+.banner {
+	width: 100%;
+	text-align: center;
+}
+
+video {
+	max-width: 100%;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 10px 0 10px 0;
+  text-align: center;
+	background: linear-gradient(#ffffff 0%, rgba(0, 0, 0, 0.14) 95%);
+	font-size: .7em;
+}
+
+.headline {
+  margin-bottom: 0;
+}
+
+
+/* ---- Navigation ---- */
+
+.homepage-logo,
+.logo {
+	width: 150px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.main-nav {
+	text-align: center;
+	background-color: #828282;
+}
+
+.main-nav a {
+  display: block;
+  padding: 20px 0;
+	font-size: .95em;
+	color: #fff;
+	text-transform: uppercase;
+	border-top: 3px double #fff;
+	border-bottom: 3px double #fff;
+}
+
+.selected a {
+	color: #a7a7a7;
+}
+
+#coffee3 a {
+	color: #a7a7a7;
+}
+
+/* --- Homepage --- */
+
+.homepage-background {
+	background-color: #5fada6;
+	color: #fff;
+}
+
+.homepage-span {
+	text-align: right;
+}
+
+span h2 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.4em;
+	color: #fff;
+	display: inline;
+}
+
+/* ---- About Us ---- */
+
+/* ---- Coffee ---- */
+
+.coffee-headline-section {
+	background-image: url(../img/coffee-beans-2.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 35%;
+}
+
+#coffee-headline {
+	padding-top: 45px;
+	padding-bottom: 20px;
+	color: #fff;
+}
+
+#coffee-section {
+	padding-top: 30px;
+	background-color: #5fada6;
+	color: #fff;
+}
+
+#coffee-section h2 {
+	color: #fff;
+}
+
+#coffee-section section {
+	padding-bottom: 30px;
+	/*box-shadow: inset 0 1px 18px 3px rgba(0,0,0,.7);*/
+}
+
+.words {
+ text-align: right;
+}
+
+
+#coffee-section img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 770px) {
+
+.homepage-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-wrapper,
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-wrapper {
+  width: 92.5%;
+  margin: 40px auto;
+}
+
+.span-wrapper {
+  width: 90%;
+	margin: 10px auto 40px auto;
+}
+
+.main-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.about-header {
+  width: 100%;
+	background-color: #828282;
+}
+
+.about-background {
+	background-color: #5fada6;
+	color: #fff;
+	min-height: 100vh;
+}
+
+.about-background h2 {
+	color: #fff;
+}
+
+.homepage-logo {
+	width: 130px;
+}
+
+.homepage-logo img {
+	border: 10px double #fff;
+	border-radius: 2px;
+	display: block;
+	text-align: center;
+}
+
+.logo {
+	width: 100px;
+}
+
+.logo img {
+	border: 7px double #fff;
+	border-radius: 2px;
+	display: block;
+}
+
+.homepage-logo,
+.logo {
+  float: left;
+  margin: 0;
+}
+
+.homepage-logo,
+.logo,
+.main-nav {
+  display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.main-nav {
+  float: right;
+  margin-top: 40px;
+	background: none;
+}
+
+.main-nav a {
+  padding: 10px 10px;
+	border: none;
+	color: #3acec2;
+}
+
+.main-nav a:hover {
+	color: #fff;
+}
+
+.header-nav a {
+	font-size: .88em;
+}
+
+#coffee1 a {
+	color: #3acec2;
+	background: rgba(255, 255, 255, 0.25);
+	border: 2px solid #fff;
+	transition-duration: .2s;
+}
+
+#coffee1 a:hover {
+	color: #3acec2;
+	background: #fff;
+}
+
+#coffee2 a {
+	border: 1.5px solid #fff;
+	background: rgba(255, 255, 255, 0.15);
+	transition-duration: .2s;
+}
+
+#coffee2 a:hover {
+	background: #fff;
+	color: #3acec2;
+}
+
+#coffee3 a {
+	border: 1.5px solid #fff;;
+	background: #fff;
+	color: #3acec2;
+}
+
+.selected a {
+	color: #fff;
+}
+
+span h2 {
+	font-size: 1.8em;
+}
+
+/* ---- About Us ---- */
+
+.col {
+  float: left;
+  vertical-align: top;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.tertiary {
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.83);
+	padding: 15px;
+	padding-bottom: 20px;
+	margin-top: 25px;
+	margin-left: 15px;
+	color: #5f5252;
+}
+
+.tertiary h2 {
+	color: #5f5252;
+}
+
+.tertiary strong {
+	text-decoration: underline;
+}
+
+.secondary,
+.primary {
+ width: 50%;
+}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1450px) {
+	.desktop {
+		width: 90.5em;
+	}
+
+	.banner {
+		margin-top: 16em;
+	}
+
+	.homepage-logo {
+		width: 150px;
+		margin-top: 64px;
+		float: left;
+	}
+
+	.desktop-nav {
+		text-align: center;
+		background-color: #828282;
+	  display: block;
+		margin-bottom: 20px;
+		background: none;
+	}
+
+	.desktop-nav li {
+		display: block;
+		margin-top: 55px;
+		margin-left: 20px;
+		float: left;
+	}
+
+	.desktop-nav a {
+		border: none;
+	  padding: 20px 30px;
+		font-size: .95em;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	.desktop-nav a:hover {
+		color: #a7a7a7;
+	}
+
+	#coffee1 a {
+		color: #fff;
+		background: rgba(255, 255, 255, 0.25);
+		border: 2px solid #fff;
+		transition-duration: .2s;
+	}
+
+	#coffee1 a:hover {
+		color: #3acec2;
+		background: #fff;
+	}
+
+}
