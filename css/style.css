@@ -150,7 +150,8 @@ span h2 {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding-bottom: 35%;
+	background-position: top;
+	padding-bottom: 35%
 }
 
 #coffee-headline {
